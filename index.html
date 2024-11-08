@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gisas</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <picture class="top">
+      <source media="(max-width: 600px)" srcset="img/assets/top_p.png" />
+      <source media="(max-width: 1200px)" srcset="img/assets/top_m.png" />
+      <img src="img/assets/top_g.png" />
+    </picture>
+
+    <div class="container">
+      <!-- Seção de boas-vindas -->
+      <div class="welcome">
+        <div class="welcome-container">
+        <div class="profile-picture"></div>
+          <div class="welcome-text">
+            <span>Olá, Seu nome!</span>
+            <span class="points">Você possui 0 pontos!</span>
+          </div>
+        </div>
+        <div class="not">
+          <a href="notificação.html">
+            <img src="/img/assets/not_icon.svg" />
+          </a>
+        </div>
+      </div>
+
+      <!-- Barra de pesquisa -->
+      <div class="search-bar">
+        <input type="text" placeholder="Buscar..." />
+        <button><img src="img/assets/busca_icon.svg" alt="Buscar" /></button>
+      </div>
+
+      <!-- Carrossel de Anúncios-->
+      <div class="carrossel">
+        <img src="img/banners/CARD 1.png" class="visivel" />
+        <img src="img/banners/CARD 2.png"/>
+        <img src="img/banners/CARD 3.png"/>
+      </div>
+
+      <script>
+        // Seleciona todas as imagens no carrossel
+        let imagens = document.querySelectorAll(".carrossel img");
+        let indiceAtual = 0;
+
+        function trocarImagem() {
+          // Remove a classe 'visivel' da imagem atual
+          imagens[indiceAtual].classList.remove("visivel");
+
+          // Atualiza o índice para a próxima imagem
+          indiceAtual = (indiceAtual + 1) % imagens.length;
+
+          // Adiciona a classe 'visivel' na próxima imagem
+          imagens[indiceAtual].classList.add("visivel");
+        }
+
+        // Troca a imagem a cada 2 segundos (2000 milissegundos)
+        setInterval(trocarImagem, 5000);
+      </script>
+
+      <!-- Seção de Mais pedidos (mantida como estava) -->
+<h2>Mais pedidos</h2>
+<div class="product-list">
+  <div class="product">
+    <img src="img/produtos/BRIGADEIRO.png" alt="Nome da Sobremesa" />
+    <h4>R$ 00,00</h4>
+    <h3>Nome da Sobremesa</h3>
+  </div>
+
+  <div class="product">
+    <img src="img/produtos/BRONIEW.png" alt="Nome da Sobremesa" />
+    <h4>R$ 00,00</h4>
+    <h3>Nome da Sobremesa</h3>
+  </div>
+
+  <div class="product">
+    <img src="img/produtos/TORTA.png" alt="Nome da Sobremesa" />
+    <h4>R$ 00,00</h4>
+    <h3>Nome da Sobremesa</h3>
+  </div>
+</div>
+
+<!-- Seção de Promoções do dia (corrigida) -->
+<h2>Promoções do dia</h2>
+<div class="promo-list">
+  <div class="promo-item">
+    <img src="img/produtos/OFF.png" alt="Promoção" />
+    <div class="promo-details">
+      <h3>Nome da Sobremesa</h3>
+      <p>Descrição do produto</p>
+      <h4>R$ 00,00</h4>
+    </div>
+  </div>
+
+  <div class="promo-item">
+    <img src="img/produtos/OFF.png" alt="Promoção" />
+    <div class="promo-details">
+      <h3>Nome da Sobremesa</h3>
+      <p>Descrição do produto</p>
+      <h4>R$ 00,00</h4>
+    </div>
+  </div>
+
+  <div class="promo-item">
+    <img src="img/produtos/OFF.png" alt="Promoção" />
+    <div class="promo-details">
+      <h3>Nome da Sobremesa</h3>
+      <p>Descrição do produto</p>
+      <h4>R$ 00,00</h4>
+    </div>
+  </div>
+</div>
+
+
+    <!-- Rodapé com navegação -->
+    <nav>
+      <ul class="menu">
+        <li>
+          <a href="#"> <img src="img/assets/home_icon.svg" alt="Início" />Início</a>
+        </li>
+        <li>
+          <a href="#"> <img src="/img/assets/menu_icon.svg" alt="Cardápio" />Cardápio</a>
+        </li>
+        <li>
+          <a href="#"> <img src="img/assets/gisers_icon.svg" alt="Gisers" /> Gisers</a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="img/assets/bag_icon.svg" alt="Meus pedidos" />Meus pedidos</a
+          >
+        </li>
+      </ul>
+    </nav>
+  </body>
+</html>
