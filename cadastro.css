@@ -15,7 +15,7 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: P01;
     margin: 0;
     padding: 0;
 }
@@ -26,7 +26,7 @@ body {
 
 .container {
     padding: 12px;
-    padding-bottom: 80px;
+    padding-bottom: 12px;
 }
 
 h1 {
@@ -35,42 +35,44 @@ h1 {
     margin-bottom: 20px;
 }
 
-fieldset {
-    border: 1px solid #AB0827;
-    padding: 20px;
-    border-radius: 8px;
+.row {
+    display: flex;
+    gap: 8px; /* Espaço entre os campos */
+    margin-bottom: 0px;
 }
 
-legend {
-    font-weight: bold;
-    margin-bottom: 10px;
+.row > div {
+    flex: 1; /* Faz os campos terem o mesmo tamanho */
 }
 
 div {
-    margin-bottom: 15px;
+    margin-bottom: 12px;
 }
 
-label {
-    display: block; /* Para garantir que o label fique em linha com o input */
-    margin-bottom: 5px; /* Adiciona espaço entre o label e o input */
-}
 
 input[type="text"],
 input[type="email"],
 input[type="tel"],
+input[type="password"],
 input[type="date"],
 select {
     width: 100%; /* Preenche toda a largura disponível */
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
+    font-size: 14px;
+    color: #666; /* Deixa o texto padrão em cinza */
+    font-family: Arial, sans-serif; /* Garante que o estilo seja consistente */
 }
 
-input[type="password"] {
-    width: 100%; /* Preenche toda a largura disponível */
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+select {
+    appearance: none;
+    -webkit-appearance: none; /* Para navegadores baseados em WebKit */
+    -moz-appearance: none; /* Para navegadores baseados em Mozilla */
+    background-image: url('');
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 12px;
 }
 
 button {
