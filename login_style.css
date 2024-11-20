@@ -70,6 +70,14 @@ body {
     border-radius: 5px;
 }
 
+.fa-eye, .fa-eye-slash{
+    position: absolute;
+    right: 42px;
+    cursor: pointer;
+    margin: 10px;
+    
+  }
+
 .btn-login {
     width: 100%;
     padding: 10px;
@@ -82,7 +90,7 @@ body {
 }
 
 .btn-login:hover {
-    background-color: #ab0827;
+    background-color: #75051a;
 }
 
 .signup-link {

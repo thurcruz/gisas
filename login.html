@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link rel="stylesheet" href="login_style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">  
+</head>
 </head>
 <body>
 
@@ -30,20 +32,16 @@
             <div class="input-container">
                 <label for="password">Senha</label>
                 <input type="password" id="password" name="password" placeholder="Insira sua senha" required minlength="6">
+                <i id="verSenha" class="fa fa-eye" aria-hidden="true" onclick="toggleSenha()"></i>
             </div>
 
             <button type="submit" class="btn-login">Entrar</button>
             
             <p class="signup-link">Esqueceu sua senha? <a href="#">Recuperar senha</a></p>
-            <p class="signup-link">Não tem uma conta? <a href="#">Cadastre-se</a></p>
+            <p class="signup-link">Não tem uma conta? <a href="cadastro.html">Cadastre-se</a></p>
         </form>
     </div>
 
-    <script>
-        document.getElementById('loginForm').addEventListener('submit', function(event) {
-            event.preventDefault(); 
-            window.location.href = "index.html";
-        });
-    </script>
+    <script src="./login.js"></script>
 </body>
 </html>

@@ -1,6 +1,12 @@
-function toggleSenha(inputId, iconId) {
-    const senhaInput = document.getElementById(inputId);
-    const icon = document.getElementById(iconId);
+
+document.getElementById('loginForm').addEventListener('submit', function(event) {
+    event.preventDefault(); 
+    window.location.href = "index.html";
+});
+
+function toggleSenha() {
+    const senhaInput = document.getElementById('password');
+    const icon = document.getElementById('verSenha');
   
     if (senhaInput.type === "password") {
       senhaInput.type = "text";
@@ -10,5 +16,6 @@ function toggleSenha(inputId, iconId) {
       senhaInput.type = "password";
       icon.classList.remove('fa-eye-slash');
       icon.classList.add('fa-eye'); // Troca o ícone para "mostrar"
-    }
+
+}
 }

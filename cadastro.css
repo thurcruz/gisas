@@ -26,8 +26,16 @@ body {
 
 .container {
     padding: 12px;
-    padding-bottom: 12px;
+    padding-bottom: 80px;
 }
+
+.fa-eye, .fa-eye-slash{
+    position: absolute;
+    right: 14px;
+    cursor: pointer;
+    margin: 10px;
+
+  }
 
 h1 {
     font-family: Cooper;
