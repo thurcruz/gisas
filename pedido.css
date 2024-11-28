@@ -14,6 +14,10 @@ body {
   flex-direction: column;
 }
 
+.top img {
+  width: 100%;
+}
+
 /* Estrutura do Container */
 .container {
   display: flex;
