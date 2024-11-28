@@ -138,13 +138,27 @@ p {
 }
 
 /* Mantendo o estilo da lista de produtos para "Mais pedidos" */
+/* Mantendo o estilo da lista de produtos para "Mais pedidos" */
 .product-list {
     display: flex;
     gap: 20px;
     overflow-x: auto; /* Permite rolagem horizontal */
     padding: 10px 0;
     scroll-behavior: smooth; /* Rolagem suave */
-  }
+}
+
+/* Adicionando um ajuste específico para telas pequenas (mobile) */
+@media (max-width: 600px) {
+    .product-list {
+        -webkit-overflow-scrolling: touch; /* Suaviza a rolagem em dispositivos iOS */
+        padding-bottom: 20px; /* Espaçamento adicional na parte inferior */
+    }
+
+    .product {
+        flex-shrink: 0; /* Impede que os itens encolham */
+        width: 150px; /* Largura fixada para que o conteúdo não fique muito pequeno */
+    }
+}
 
 .product {
     flex-shrink: 0; /* Impede que os itens encolham */
