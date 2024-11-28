@@ -1,62 +1,134 @@
-*{
-    margin: 0;
-    padding:0;
-    box-sizing: border-box;
-    }
-
+/* Reset padrão */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100vh; /* Garante que o body ocupe toda a tela */
+  display: flex;
+  flex-direction: column;
 }
 
+/* Estrutura do Container */
 .container {
-    display: flex;
-    padding: 20px;
+  display: flex;
+  flex-direction: row;
+  height: 100vh; /* Faz o container ocupar a altura total da tela */
+  padding: 20px;
 }
 
+/* Coluna da Foto */
+.photo img {
+  width: 100%;
+  max-width: 600px;
+  height: 100vh; /* Ocupa toda a altura da tela */
+  object-fit: cover; /* Ajusta a imagem sem distorcer */
+  border-radius: 10px;
+}
+
+/* Coluna de Informações */
 .info {
-    display: flex;
-    gap: 10px;
-    padding: 20px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
 }
 
- /* Quando a tela for menor que 600px, os elementos ficam empilhados */
- @media (max-width: 600px) {
-    .info {
-      flex-direction: column; /* Empilha os elementos */
-    }
+/* Texto e inputs */
+.info h2 {
+  font-size: 24px;
+}
+
+.info p {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.info h6 {
+  margin-bottom: 10px;
+}
+.observacao .box {
+  border-radius: 8px;
+  border: 1px solid #999;
+  width: 100%;
+  padding: 30px;
+  font-size: 16px;
+}
+
+/* Botões */
+.botoes {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.btn-small {
+  flex: 1;
+  max-width: 40%;
+  height: 48px;
+  font-size: 16px;
+  color: white;
+  background: #AB0827;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.btn-large {
+  flex: 2;
+  height: 48px;
+  font-size: 18px;
+  color: white;
+  background: #AB0827;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+/* Hover nos Botões */
+button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Versão Mobile */
+@media (max-width: 600px) {
+  .container {
+      flex-direction: column;
+      height: auto; /* Para mobile, a altura é ajustável */
+      padding: 10px;
   }
 
-
-  .box {
-    border-radius: 8px;
-    border-color: #999;
-    width: 100%;
-    height: 80px;
+  .photo img {
+      height: auto; /* Para mobile, a imagem se ajusta automaticamente */
+       /* Limita a altura para ocupar metade da tela */
+      border-radius: 10px;
   }
 
-  .btn {
-    width: 100%;
-    height: 48px;
-    font-size: 18px;
-    color: white;
-    background: #AB0827;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-    transition: transform 0.2s, box-shadow 0.2s;
+  .info {
+      margin-top: 20px;
+      padding: 10px;
   }
-  
-  .btn:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
+
+  .botoes {
+      flex-direction: row;
+      gap: 10px;
   }
-  
-  .btn:active {
-    transform: translateY(0);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+
+  .btn-small {
+      flex: 1;
   }
-  
+
+  .btn-large {
+      flex: 2;
+  }
+}
