@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gisers</title>
+    <link rel="stylesheet" href="fidelidade.css">
+    <!-- Link do CSS do Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <picture class="top">
+        <source media="(max-width: 600px)" srcset="img/assets/top_p.png" />
+        <source media="(max-width: 1200px)" srcset="img/assets/top_m.png"/>
+        <img src="img/assets/top_g.png" alt="Imagem Top">
+    </picture>
+    
+    <div class="container text-center">
+        <h1 style="color: #AB0827;font-family: Cooper; font-weight: bold; font-size: 50px;">Gisers</h1>
+        <p>Carol, você possui:</p>
+        <p class="points">40 pontos</p>
+    </div>
+
+    <div class="container mt-5">
+        <div class="progress-custom">
+            <div class="progress-bar-custom" style="width: 40%;"></div>
+            <div class="progress-text" style="left: 0%;">0 pts</div>
+            <div class="marker marker-filled" style="left: 0%;"></div>
+
+            <div class="progress-text" style="left: 25%;">25 pts</div>
+            <div class="marker marker-filled" style="left: 25%;"></div>
+
+            <div class="progress-text" style="left: 50%;">50 pts</div>
+            <div class="marker marker-filled" style="left: 50%;"></div>
+
+            <div class="progress-text" style="left: 75%;">75 pts</div>
+            <div class="marker" style="left: 75%;"></div>
+
+            <div class="progress-text" style="left: 100%;">100 pts</div>
+            <div class="marker" style="left: 100%;"></div>
+
+            <div class="marker-icon">
+                <img src="princess-grey.svg" alt="Icon">
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="princess-pink (1).svg" alt="Icon" class="princesa">
+        <img src="sifrao-pink.svg" alt="Icon" class="sifrao">
+        <p class="inicio">Como funciona?</p>
+        <p class="prim">A cada <strong>R$1 gasto</strong>, você ganha <strong>1 ponto</strong>. Acumule pontos e torne-se um(a) Gisers!</p>
+        <p class="Seg">Ao juntar <strong>50 pontos</strong>, você alcança o nível de Gisers! Troque pontos por cupons e brindes exclusivos.</p>
+    </div>
+
+    <nav>
+        <ul class="menu">
+          <li><a href="index.html"><img src="img/assets/home_icon.svg" alt="Início" />Início</a></li>
+          <li><a href="#"><img src="/img/assets/menu_icon.svg" alt="Cardápio" />Cardápio</a></li>
+          <li><a href="fidelidade.html"><img src="img/assets/gisers_icon.svg" alt="Gisers" />Gisers</a></li>
+          <li><a href="#"><img src="img/assets/bag_icon.svg" alt="Meus pedidos" />Meus pedidos</a></li>
+        </ul>
+    </nav>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,202 @@
+@font-face {
+    font-family: P01;
+    src: url('fonts/Product\ Sans\ Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: Cooper;
+    src: url('fonts/Cooper-Black.ttf') format('truetype');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Evita barra de rolagem horizontal */
+}
+
+.top img {
+    width: 100%;
+    height: auto;
+}
+
+/* Estilo para o fundo da barra */
+.progress-custom {
+    position: relative;
+    height: 15px;
+    background-color: #e9ecef;
+    border-radius: 15px;
+}
+
+/* Estilo da barra preenchida */
+.progress-bar-custom {
+    height: 100%;
+    background-color: #AB0827;
+    border-radius: 10px 0 0 10px;
+}
+
+/* Estilo dos marcadores */
+.marker {
+    position: absolute;
+    top: -10px;
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border: 3px solid #ccc;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 14px;
+    margin-left: -5px;
+}
+
+.marker-filled {
+    background-color: #AB0827;
+    border-color: #AB0827;
+}
+
+/* Estilo do ícone central */
+.marker-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: #e9ecef;
+    border-radius: 50%;
+    position: absolute;
+    top: -12px;
+    left: 52%;
+    transform: translateX(-50%);
+    border: 2px solid #ccc;
+}
+
+/* Estilo dos textos */
+.progress-text {
+    position: absolute;
+    top: -30px;
+    font-size: 20px;
+    margin-top: -20px;
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+}
+
+.container {
+    text-align: center;
+    background-color: #fff;
+    padding: 12px;
+    padding-bottom: 80px;
+    border-radius: 8px;
+}
+
+p {
+    font-size: 17px;
+    font-family: Arial, sans-serif;
+    color: #525151;
+    position: relative;
+    padding-bottom: 50px;
+}
+
+.points {
+    font-size: 33px;
+    font-weight: bold;
+    color: #070000;
+    margin: 15px;
+}
+
+/* Card Estilo */
+.card {
+    background-color: #AB0827;
+    color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.2);
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card img {
+    max-width: 50px;
+    height: auto;
+}
+
+.princesa {
+    margin-bottom: 20px;
+}
+
+.sifrao {
+    margin-top: 10px;
+}
+
+.inicio {
+    font-weight: bold;
+    color: #fcfbf6;
+    font-family: Cooper;
+    font-size: 30px;
+    margin: 0;
+    padding: 10px;
+}
+
+/* Estilo para os botões de navegação */
+ul {
+    list-style-type: none;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #FFE4EB;
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px 20px;
+    border-radius: 8px 8px 0 0;
+}
+
+ul a {
+    font-family: P01;
+    font-size: 12px;
+    font-weight: bold;
+    color: #AB0827;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+ul img {
+    margin-bottom: 5px;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+    .card {
+        padding: 20px;
+        width: 100%;
+    }
+
+    .princesa, .sifrao {
+        width: 40px;
+    }
+    
+    .points {
+        font-size: 28px;
+    }
+
+    .menu {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    ul {
+        padding: 10px;
+    }
+}

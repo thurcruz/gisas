@@ -1,5 +1,10 @@
 
 @font-face {
+    font-family: Cooper;
+    src: url('fonts/Cooper-Black.ttf') format('truetype');
+}
+
+@font-face {
     font-family: P01;
     src: url('fonts/Product\ Sans\ Bold.ttf') format('truetype');
 }
@@ -116,11 +121,6 @@ body {
     z-index: 1; /* Garante que a imagem visível fique na frente */
 }
 
-@font-face {
-    font-family: Cooper;
-    src: url('fonts/Cooper-Black.ttf') format('truetype');
-}
-
 h2 {
     font-family: Cooper;
     color: #AB0827;
@@ -137,7 +137,6 @@ p {
     
 }
 
-/* Mantendo o estilo da lista de produtos para "Mais pedidos" */
 /* Mantendo o estilo da lista de produtos para "Mais pedidos" */
 .product-list {
     display: flex;
@@ -265,7 +264,6 @@ ul a {
 }
 
 ul img {
-    margin-bottom: 16px;
     align-items: center;
 }
 
