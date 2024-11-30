@@ -7,23 +7,32 @@
     <link rel="stylesheet" href="fidelidade.css">
     <!-- Link do CSS do Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+   
 </head>
 <body>
     <picture class="top">
         <source media="(max-width: 600px)" srcset="img/assets/top_p.png" />
         <source media="(max-width: 1200px)" srcset="img/assets/top_m.png"/>
-        <img src="img/assets/top_g.png" alt="Imagem Top">
-    </picture>
-    
-    <div class="container text-center">
-        <h1 style="color: #AB0827;font-family: Cooper; font-weight: bold; font-size: 50px;">Gisers</h1>
+        <img src="img/assets/top_g.png" />
+      </picture>
+      
+    <div class="container">
+        <h1 style="color: #AB0827;font-family: Cooper; font-weight: bold;  width: -25px;
+    height: 10 px; margin: 5px; padding-bottom: 50px; font-size: 50px;">Gisers</h1>
         <p>Carol, você possui:</p>
         <p class="points">40 pontos</p>
+       
     </div>
 
+    
     <div class="container mt-5">
+    
+
         <div class="progress-custom">
+            <!-- Barra preenchida -->
             <div class="progress-bar-custom" style="width: 40%;"></div>
+
+            <!-- Marcadores de progresso -->
             <div class="progress-text" style="left: 0%;">0 pts</div>
             <div class="marker marker-filled" style="left: 0%;"></div>
 
@@ -31,7 +40,7 @@
             <div class="marker marker-filled" style="left: 25%;"></div>
 
             <div class="progress-text" style="left: 50%;">50 pts</div>
-            <div class="marker marker-filled" style="left: 50%;"></div>
+            <div class="marker-marker-filled" style="left: 50%;"></div>
 
             <div class="progress-text" style="left: 75%;">75 pts</div>
             <div class="marker" style="left: 75%;"></div>
@@ -40,28 +49,107 @@
             <div class="marker" style="left: 100%;"></div>
 
             <div class="marker-icon">
+    
                 <img src="princess-grey.svg" alt="Icon">
-            </div>
+                  </div>
+                </div>
         </div>
-    </div>
+        <style>
+            
+        
+            .card {
+              background-color: #AB0827; /* Cor de fundo vermelho */
+              color: #fff; /* Texto branco */
+              padding: 95px;
+              border-radius: 8px;
+              width:750px;
+              box-shadow: 0 8px 10px rgba(0, 0, 0, 0.2);
+              line-height: 1.6; /* Melhor espaçamento entre linhas */
+              display:flex
+            }
+        
+            .prim{
+              margin: 0px 0;
+              padding: 5px;
+              top: 70px;
+             left: 9%;
+             color: #fcfbf6;
+            }
 
-    <div class="card">
-        <img src="princess-pink (1).svg" alt="Icon" class="princesa">
-        <img src="sifrao-pink.svg" alt="Icon" class="sifrao">
-        <p class="inicio">Como funciona?</p>
-        <p class="prim">A cada <strong>R$1 gasto</strong>, você ganha <strong>1 ponto</strong>. Acumule pontos e torne-se um(a) Gisers!</p>
-        <p class="Seg">Ao juntar <strong>50 pontos</strong>, você alcança o nível de Gisers! Troque pontos por cupons e brindes exclusivos.</p>
-    </div>
+            .Seg{
+              margin: 0px 0;
+              padding: 5px;
+              top: 125px;
+             left: 9%;
+             color: #fcfbf6;
+            }
+            .inicio{
+              font-weight: bold;
+              color: #fcfbf6; /* Destaque em branco */
+              
+            font-family: Cooper; 
+            font-size: 30px;
+            margin: 0px 0;
+            padding: 10px;
+            top: -10px;
+            left: 9%;
+            }
+            .card p strong {
+              font-weight: bold;
+              color: #fcfbf6; /* Destaque em branco */
+            }
 
+            .princesa {
+              margin: 42px; /* Remove margens padrão */
+              display: block; /* Remove espaçamentos extras */
+              margin-left: -70px; /* Adiciona 10px de espaço entre a imagem e a margem esquerda */
+              height: auto; /* Altura total da janela */
+              width: 5%;
+           
+            }
+            
+            .sifrao {
+              margin: 0px; /* Remove margens padrão */
+              display: block; /* Remove espaçamentos extras */
+              margin-left: -66px; /* Adiciona 10px de espaço entre a imagem e a margem esquerda */
+              height: auto; /* Altura total da janela */
+              width: 4%;
+              margin-top: -162px;
+            }
+            
+          </style>
+        </head>
+        <body>
+          <div class="card">
+            <img src="princess-pink (1).svg" alt="Icon" class="princesa">
+            <img src="sifrao-pink.svg" alt="Icon" class="sifrao">
+            <p class="inicio">Como funciona?</p> 
+            <p class="prim">A cada <strong>R$1 gasto</strong>, você ganha <strong>1 ponto</strong>. Acumule pontos e torne-se um(a) Gisers!</p>
+            <p class="Seg">Ao juntar <strong>50 pontos</strong>, você alcança o nível de Gisers! Troque pontos por cupons e brindes exclusivos.</p>
+          </div>
+
+
+        
+    </div>
     <nav>
         <ul class="menu">
-          <li><a href="index.html"><img src="img/assets/home_icon.svg" alt="Início" />Início</a></li>
-          <li><a href="#"><img src="/img/assets/menu_icon.svg" alt="Cardápio" />Cardápio</a></li>
-          <li><a href="fidelidade.html"><img src="img/assets/gisers_icon.svg" alt="Gisers" />Gisers</a></li>
-          <li><a href="#"><img src="img/assets/bag_icon.svg" alt="Meus pedidos" />Meus pedidos</a></li>
+          <li>
+            <a href="index.html"> <img src="img/assets/home_icon.svg" alt="Início" />Início</a>
+          </li>
+          <li>
+            <a href="#"> <img src="/img/assets/menu_icon.svg" alt="Cardápio" />Cardápio</a>
+          </li>
+          <li>
+            <a href="fidelidade.html"> <img src="img/assets/gisers_icon.svg" alt="Gisers" /> Gisers</a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="img/assets/bag_icon.svg" alt="Meus pedidos" />Meus pedidos</a
+            >
+          </li>
         </ul>
-    </nav>
-
+      </nav>
+    <!-- Link do JS do Bootstrap (opcional) -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
