@@ -2,10 +2,10 @@
 <html lang="pt-BR">
 
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="perfil.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
     <script src="script.js" defer></script>
     <title>Gisas</title>
 </head>
@@ -13,108 +13,76 @@
 <body>
     <header>
         <picture class="top">
-            <source media="(max-width: 600px)" srcset="img/assets/top_p.png" />
-            <source media="(max-width: 1200px)" srcset="img/assets/top_m.png" />
-            <img src="img/assets/top_g.png" />
+            <source media="(max-width: 600px)" srcset="img/assets/top_p.png">
+            <source media="(max-width: 1200px)" srcset="img/assets/top_m.png">
+            <img src="img/assets/top_g.png" alt="Banner superior">
         </picture>
     </header>
 
     <main>
+        <!-- Perfil -->
+        <section class="perfil">
+            <p>Olá Giser! Bem-vindo(a) à sua conta.</p>
+            <div class="perfil-item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+                    <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z" />
+                </svg>
+            </div>
+        </section>
 
+        <!-- Menu de opções -->
+        <section class="menu-opcoes">
+            <!-- Minha Conta -->
+            <div class="menu-item">
+                <i class="bi bi-person-circle"></i>
+                <div>
+                    <h3>Minha Conta</h3>
+                    <a href="#">Minhas informações da conta</a>
+                </div>
+            </div>
 
-    <section class="perfil">
-        <p>Olá Giser! Bem vindo a sua conta.</p>
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16" class="rosto">
-            <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z"/>
-        </svg>
-    </section>
-    <section class="cont">
-        <h3>Minha Conta</h3>
-        <p>Minhas informações da conta</p>
-    </section>
+            <!-- Notificações -->
+            <div class="menu-item">
+                <i class="bi bi-bell"></i>
+                <div>
+                    <h3>Notificações</h3>
+                    <a href="notificação.html">Minha central de notificações</a>
+                </div>
+            </div>
 
+            <!-- Pagamentos -->
+            <div class="menu-item">
+                <i class="bi bi-credit-card"></i>
+                <div>
+                    <h3>Pagamentos</h3>
+                    <a href="pagamentos.html">Cartões e seus saldos</a>
+                </div>
+            </div>
 
-    <section class="notificacoes">
-        <h3>Notificações</h3>
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bell" viewBox="0 0 16 16" class="sino">
-            <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2M8 1.918l-.797.161A4 4 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4 4 0 0 0-3.203-3.92zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5 5 0 0 1 13 6c0 .88.32 4.2 1.22 6"/>
-          </svg>
-        <a href="notificação.html">
-            <p>Minha central de Notificações</p>
-    </a>
-    </section>
+            <!-- Endereços -->
+            <div class="menu-item">
+                <i class="bi bi-geo-alt"></i>
+                <div>
+                    <h3>Endereços</h3>
+                    <a href="enederecos.html">Seus endereços salvos</a>
+                </div>
+            </div>
 
-    <section class="pagamentos">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-credit-card-2-front" viewBox="0 0 16 16" class="cartao">
-            <path d="M14 3a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1zM2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2z"/>
-            <path d="M2 5.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5zm0 3a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5m0 2a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 0 1h-1a.5.5 0 0 1-.5-.5m3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 0 1h-1a.5.5 0 0 1-.5-.5m3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 0 1h-1a.5.5 0 0 1-.5-.5m3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 0 1h-1a.5.5 0 0 1-.5-.5"/>
-          </svg>
-        <h3>Pagamentos</h3>
-        <a href="pagamentos.html">
-             <p>Cartões e seus saldos dentro do site</p>
-        </a>
+            <!-- Configurações -->
+            <div class="menu-item">
+                <i class="bi bi-gear"></i>
+                <div>
+                    <h3>Configurações</h3>
+                    <a href="configuracoes.html">Ajustes do sistema</a>
+                </div>
+            </div>
+        </section>
 
-    </section>
-
-
-    <section class="enderecos">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16" class="local">
-            <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10"/>
-            <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
-          </svg>
-        <h3>Endereços</h3>
-        <a href="enderecos.html">
-            <p>Seus endereços salvos</p>
-        </a>
-
-    </section>
-    
-    
-    <section class="config">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-gear" viewBox="0 0 16 16" class="config">
-            <path d="M8 4.754a3.246 3.246 0 1 0 0 6.492 3.246 3.246 0 0 0 0-6.492M5.754 8a2.246 2.246 0 1 1 4.492 0 2.246 2.246 0 0 1-4.492 0"/>
-            <path d="M9.796 1.343c-.527-1.79-3.065-1.79-3.592 0l-.094.319a.873.873 0 0 1-1.255.52l-.292-.16c-1.64-.892-3.433.902-2.54 2.541l.159.292a.873.873 0 0 1-.52 1.255l-.319.094c-1.79.527-1.79 3.065 0 3.592l.319.094a.873.873 0 0 1 .52 1.255l-.16.292c-.892 1.64.901 3.434 2.541 2.54l.292-.159a.873.873 0 0 1 1.255.52l.094.319c.527 1.79 3.065 1.79 3.592 0l.094-.319a.873.873 0 0 1 1.255-.52l.292.16c1.64.893 3.434-.902 2.54-2.541l-.159-.292a.873.873 0 0 1 .52-1.255l.319-.094c1.79-.527 1.79-3.065 0-3.592l-.319-.094a.873.873 0 0 1-.52-1.255l.16-.292c.893-1.64-.902-3.433-2.541-2.54l-.292.159a.873.873 0 0 1-1.255-.52zm-2.633.283c.246-.835 1.428-.835 1.674 0l.094.319a1.873 1.873 0 0 0 2.693 1.115l.291-.16c.764-.415 1.6.42 1.184 1.185l-.159.292a1.873 1.873 0 0 0 1.116 2.692l.318.094c.835.246.835 1.428 0 1.674l-.319.094a1.873 1.873 0 0 0-1.115 2.693l.16.291c.415.764-.42 1.6-1.185 1.184l-.291-.159a1.873 1.873 0 0 0-2.693 1.116l-.094.318c-.246.835-1.428.835-1.674 0l-.094-.319a1.873 1.873 0 0 0-2.692-1.115l-.292.16c-.764.415-1.6-.42-1.184-1.185l.159-.291A1.873 1.873 0 0 0 1.945 8.93l-.319-.094c-.835-.246-.835-1.428 0-1.674l.319-.094A1.873 1.873 0 0 0 3.06 4.377l-.16-.292c-.415-.764.42-1.6 1.185-1.184l.292.159a1.873 1.873 0 0 0 2.692-1.115z"/>
-          </svg>
-        <a href="config.html">
-            <h3>Configurações</h3>
-        </a>
-
-    </section>
-
-
-    <section class="sair">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-right" viewBox="0 0 16 16" class="saida">
-            <path fill-rule="evenodd" d="M10 12.5a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v2a.5.5 0 0 0 1 0v-2A1.5 1.5 0 0 0 9.5 2h-8A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-2a.5.5 0 0 0-1 0z"/>
-            <path fill-rule="evenodd" d="M15.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L14.293 7.5H5.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708z"/>
-          </svg>
-        <a href="cadrastro.html"> 
-        <p>Sair</p>
-        </a>
-    </section>
-
-</main>
-
-     <!-- Rodapé com navegação -->
-     <nav>
-        <ul class="menu">
-          <li>
-            <a href="#"> <img src="img/assets/home_icon.svg" alt="Início" />Início</a>
-          </li>
-          <li>
-            <a href="#"> <img src="/img/assets/menu_icon.svg" alt="Cardápio" />Cardápio</a>
-          </li>
-          <li>
-            <a href="#"> <img src="img/assets/gisers_icon.svg" alt="Gisers" /> Gisers</a>
-          </li>
-          <li>
-            <a href="#">
-              <img src="img/assets/bag_icon.svg" alt="Meus pedidos" />Meus pedidos</a
-            >
-          </li>
-        </ul>
-      </nav>
-    </body>
-  </html>
-
+        <!-- Botão de sair -->
+        <section class="sair">
+            <button id="botao-sair">Sair</button>
+        </section>
+    </main>
 </body>
+
 </html>

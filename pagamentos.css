@@ -15,6 +15,11 @@ body{
 
 
 }
+
+.top img {
+    width: 100%;
+}
+
 .h3{
     font-family: P01;
     color: #0000;

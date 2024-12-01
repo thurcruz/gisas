@@ -1,90 +1,88 @@
-@font-face { 
-    font-family: P01;
-    src: url('fonts/Product Sans Bold.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: Cooper;
-    src: url('fonts/Cooper-Black.ttf') format('truetype');
-}
-body{
-    font-family: arial, sans-serif;
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #0000;
-
-
-}
-.h3{
-    font-family: P01;
-    color: #0000;
-    font-size: 12px;
-
-
-}
-.perfil{
-    align-items: justify;
-    outline-color: darkgray;
-    display: flex;
-}
-.notificacoes{
-    align-items: justify;
-    outline-color: darkgray;
-    display: flex;
-}
-.pagamentos{
-    align-items: justify;
-    outline-color: darkgray;
-    display: flex;
-}
-.enderecos{
-    align-items: justify;
-    outline-color: darkgray;
-    display: flex;
-}
-.config{
-    align-items: justify;
-    outline-color: darkgray;
-    display: flex;
-}
-.sair{
-    align-items: justify;
-    outline-color: darkgray;
-    display: flex;
+    background-color: #f4f4f9;
 }
 
-
-/* Estilo para os botões de navegação */
-ul {
-    list-style-type: none;;
-    position: fixed;
-    bottom: 0;
-    left: 0;
+header img {
     width: 100%;
-    background-color: #FFE4EB;
-    color: aliceblue;
-    display:flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 14px 0px;
-    border-radius: 8px 8px 0px 0px;
-    
 }
 
-ul a {
-    font-family: P01;
-    font-size: 12px;
-    font-weight: bold;
-    color: #AB0827;
-    padding: 0px 20px;
-    text-decoration: none;
+main {
+    padding: 20px;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    
+    gap: 20px;
 }
 
-ul img {
-    margin-bottom: 16px;
+.perfil p {
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.perfil-item {
+    display: flex;
     align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.menu-opcoes {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.menu-item i {
+    font-size: 1.5rem;
+    color: #AB0827;
+}
+
+.menu-item:hover i {
+    color: #86051d;
+}
+
+.menu-item h3 {
+    margin: 0;
+    font-size: 1rem;
+    color: #333;
+}
+
+.menu-item a {
+    text-decoration: none;
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.menu-item:hover {
+    background-color: #f0f0f5;
+}
+
+#botao-sair {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+    background-color: #AB0827;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#botao-sair:hover {
+    background-color: #86051d;
 }
