@@ -3,11 +3,16 @@ body {
     padding-bottom: 60px; /* Para garantir que o conteúdo não fique escondido atrás do rodapé fixo */
 }
 
-.header-background h1 {
+header h1 {
     font-family: 'Arial', sans-serif;
-    font-size: 24px;
+    font-size: 30px;
     font-weight: bold;
 }
+
+.top img {
+    width: 100%;
+}
+
 
 .search-container {
     padding: 0 20px;
@@ -19,30 +24,42 @@ body {
 
 .footer {
     border-top: 1px solid #E0E0E0;
+    background-color: #FFE4EB;
 }
 
-.footer p {
+.footer ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 14px 0;
     margin: 0;
-    font-size: 12px;
 }
 
-ul {
-    list-style-type: none;;
+.footer ul a {
+    text-decoration: none;
+    color: #AB0827;
+    font-weight: bold;
+    text-align: center;
+}
+
+.footer ul a img {
+    display: block;
+    margin: 0 auto 5px;
+}
+
+.menu {
     position: fixed;
     bottom: 0;
     left: 0;
     width: 100%;
     background-color: #FFE4EB;
-    color: aliceblue;
-    display:flex;
-    align-items: center;
+    display: flex;
     justify-content: space-between;
-    padding: 14px 0px;
+    padding: 14px 0;
     border-radius: 8px 8px 0px 0px;
-    
 }
 
-ul a {
+.menu a {
     font-family: P01;
     font-size: 12px;
     font-weight: bold;
@@ -52,9 +69,75 @@ ul a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    
 }
 
-ul img {
-    align-items: center;
+.menu img {
+    width: 24px;
+    height: 24px;
 }
+
+/* Melhorias para as abas de navegação */
+.nav-tabs .nav-link {
+    font-family: 'P01', sans-serif;
+    color: #AB0827;
+    padding: 10px 20px;
+    border-radius: 50px;
+}
+
+.nav-tabs .nav-link.active {
+    background-color: #AB0827;
+    color: white;
+}
+
+/* Estilos para os produtos */
+.product-image {
+    width: 100px;
+    height: 100px;
+    background-size: cover;
+    border-radius: 8px;
+}
+
+.product {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 12px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    margin-bottom: 15px;
+}
+
+.product h5 {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.product p {
+    font-size: 14px;
+    color: #444444;
+}
+
+.product button {
+    background-color: #AB0827;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.product button:hover {
+    background-color: #8e061f;
+}
+
+@media (max-width: 768px) {
+    .product {
+        width: 100%;
+    }
+
+    .nav-tabs {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
