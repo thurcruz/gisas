@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gisers</title>
+    <title>Barra de Progresso Personalizada</title>
     <link rel="stylesheet" href="fidelidade.css">
     <!-- Link do CSS do Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -20,7 +20,7 @@
         <h1 style="color: #AB0827;font-family: Cooper; font-weight: bold;  width: -25px;
     height: 10 px; margin: 5px; padding-bottom: 50px; font-size: 50px;">Gisers</h1>
         <p>Carol, você possui:</p>
-        <p class="points">40 pontos</p>
+        <p class="points">38 pontos</p>
        
     </div>
 
@@ -30,7 +30,7 @@
 
         <div class="progress-custom">
             <!-- Barra preenchida -->
-            <div class="progress-bar-custom" style="width: 40%;"></div>
+            <div class="progress-bar-custom" style="width: 38%;"></div>
 
             <!-- Marcadores de progresso -->
             <div class="progress-text" style="left: 0%;">0 pts</div>
@@ -50,19 +50,20 @@
 
             <div class="marker-icon">
     
-                <img src="princess-grey.svg" alt="Icon">
+                <img src="img/assets/princess-grey.svg" alt="Icon">
                   </div>
                 </div>
         </div>
         <style>
             
-        
             .card {
-              background-color: #AB0827; /* Cor de fundo vermelho */
+            
+            background-color: #AB0827; /* Cor de fundo vermelho */
               color: #fff; /* Texto branco */
               padding: 95px;
               border-radius: 8px;
-              width:750px;
+              width: 100%;
+            max-width: 750px;
               box-shadow: 0 8px 10px rgba(0, 0, 0, 0.2);
               line-height: 1.6; /* Melhor espaçamento entre linhas */
               display:flex
@@ -90,9 +91,9 @@
             font-family: Cooper; 
             font-size: 30px;
             margin: 0px 0;
-            padding: 10px;
-            top: -10px;
-            left: 9%;
+              padding: 10px;
+              top: -10px;
+             left: 9%;
             }
             .card p strong {
               font-weight: bold;
@@ -121,8 +122,8 @@
         </head>
         <body>
           <div class="card">
-            <img src="princess-pink (1).svg" alt="Icon" class="princesa">
-            <img src="sifrao-pink.svg" alt="Icon" class="sifrao">
+            <img src="img/assets/princess-pink.svg" alt="Icon" class="princesa">
+            <img src="img/assets/sifrao-pink.svg" alt="Icon" class="sifrao">
             <p class="inicio">Como funciona?</p> 
             <p class="prim">A cada <strong>R$1 gasto</strong>, você ganha <strong>1 ponto</strong>. Acumule pontos e torne-se um(a) Gisers!</p>
             <p class="Seg">Ao juntar <strong>50 pontos</strong>, você alcança o nível de Gisers! Troque pontos por cupons e brindes exclusivos.</p>
@@ -134,13 +135,13 @@
     <nav>
         <ul class="menu">
           <li>
-            <a href="index.html"> <img src="img/assets/home_icon.svg" alt="Início" />Início</a>
+            <a href="#"> <img src="img/assets/home_icon.svg" alt="Início" />Início</a>
           </li>
           <li>
             <a href="#"> <img src="/img/assets/menu_icon.svg" alt="Cardápio" />Cardápio</a>
           </li>
           <li>
-            <a href="fidelidade.html"> <img src="img/assets/gisers_icon.svg" alt="Gisers" /> Gisers</a>
+            <a href="#"> <img src="img/assets/gisers_icon.svg" alt="Gisers" /> Gisers</a>
           </li>
           <li>
             <a href="#">

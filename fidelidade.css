@@ -10,6 +10,7 @@
 }
 
 
+
 *{
     margin: 0;
     padding:0;
@@ -18,16 +19,14 @@
 
 body {
     font-family: Arial, sans-serif;
+
     margin: 0;
     padding: 0;
-    
 }
 
 .top img {
     width: 100%;
 }
-
-
 
 /* Estilo para o fundo da barra */
 .progress-custom {
@@ -102,11 +101,12 @@ body {
     border-radius: 8px;
     padding: 12px;
     padding-bottom: 80px;
+    width: 100%;
+     max-width: 750px;
     
 }
 
-
-
+ 
 p{
     font-size: 17px;
     font-family: Arial, sans-serif;
@@ -158,5 +158,6 @@ ul a {
 }
 
 ul img {
+
     align-items: center;
 }

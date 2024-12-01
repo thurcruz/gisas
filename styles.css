@@ -56,6 +56,14 @@ body {
     margin-left: 15px; /* Adiciona espaço entre a foto e os textos */
 }
 
+.welcome-text a {
+    text-decoration: none;  /* Remove o sublinhado */
+    color: inherit; /* Mantém a cor padrão do texto */
+}
+.welcome-text span {
+    margin-bottom: 5px;  /* Ajusta o espaço entre as linhas */
+}
+
 .points {
     color: #AB0827;
     font-weight: bold;

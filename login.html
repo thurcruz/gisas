@@ -7,10 +7,7 @@
     <link rel="stylesheet" href="login_style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">  
 </head>
-</head>
 <body>
-
-    <!-- Contêiner da imagem -->
     <div class="image-container">
         <picture class="top">
             <source media="(max-width: 600px)" srcset="img/assets/top_p.png" />
@@ -19,29 +16,26 @@
         </picture>
     </div>
 
-    <!-- Contêiner do formulário -->
     <div class="login-container">
-        <form class="login-form" action="index.html" method="post" id="loginForm">
+        <form class="login-form" onsubmit="login(event)">
             <img src="img/assets/logo_gisas.png" alt="Logo Da Gisas" class="logo">
             
             <div class="input-container">
-                <label for="email">E-mail</label>
-                <input type="email" id="email" name="email" placeholder="example:@gmail.com" required>
+                <label for="email">Email</label>
+                <input type="text" id="email" placeholder="Insira seu email" required>
             </div>
 
             <div class="input-container">
                 <label for="password">Senha</label>
-                <input type="password" id="password" name="password" placeholder="Insira sua senha" required minlength="6">
+                <input type="password" id="senha" placeholder="Insira sua senha" required>
                 <i id="verSenha" class="fa fa-eye" aria-hidden="true" onclick="toggleSenha()"></i>
             </div>
 
             <button type="submit" class="btn-login">Entrar</button>
             
-            <p class="signup-link">Esqueceu sua senha? <a href="#">Recuperar senha</a></p>
             <p class="signup-link">Não tem uma conta? <a href="cadastro.html">Cadastre-se</a></p>
         </form>
     </div>
-
     <script src="./login.js"></script>
 </body>
 </html>
